@@ -26,7 +26,7 @@ package golp
 
 // For Linux, assume LPSolve bundled in local lpsolve directory
 #cgo linux CFLAGS: -I/usr/include/lpsolve
-#cgo linux LDFLAGS: -L${SRCDIR}/lpsolve -llpsolve55 -Wl,-rpath=${SRCDIR}/lpsolve
+#cgo linux LDFLAGS: -L/usr/lib -llpsolve55
 
 #include "lp_lib.h"
 #include <stdlib.h>
