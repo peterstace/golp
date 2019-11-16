@@ -25,7 +25,7 @@ package golp
 #cgo darwin LDFLAGS: -L/opt/local/lib -llpsolve55
 
 // For Linux, assume LPSolve bundled in local lpsolve directory
-#cgo linux CFLAGS: -I${SRCDIR}/lpsolve
+#cgo linux CFLAGS: -I/usr/include/lpsolve
 #cgo linux LDFLAGS: -L${SRCDIR}/lpsolve -llpsolve55 -Wl,-rpath=${SRCDIR}/lpsolve
 
 #include "lp_lib.h"
